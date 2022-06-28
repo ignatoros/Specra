@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Specra.WindowFolder.AdminFolder"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="EditUserWindow" Height="700" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -47,7 +48,7 @@
         <Label  
                Content="Роль" Grid.Column="1" Grid.Row="11" Grid.ColumnSpan="2"/>
         <ComboBox x:Name="RoleCb" 
-                  Grid.Column="3" Grid.Row="11" SelectionChanged="RoleCb_SelectionChanged">
+                  Grid.Column="3" Grid.Row="11">
             
         </ComboBox>
         <Button x:Name="EditBtn" Content="Сохранить пользователя" 

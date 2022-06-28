@@ -11,10 +11,10 @@ namespace Specra.WindowFolder
     public partial class AuthorizationWindow : Window
     {
         SqlConnection sqlConnection =
-            new SqlConnection(@"Data Source=DESKTOP-VNUSCBE\KOMMO;
-                                Initial Catalog=up02oros;
+            new SqlConnection(@"Data Source=(local)\SQLEXPRESS;
+                                Initial Catalog=PP03Oros;
                                        Integrated Security=True");
-        SqlCommand SqlCommand;
+        SqlCommand sqlCommand;
         SqlDataReader dataReader;
 
         public AuthorizationWindow()
@@ -39,11 +39,11 @@ namespace Specra.WindowFolder
                 try
                 {
                     sqlConnection.Open();
-                    SqlCommand = new SqlCommand("Select * FROM " +
+                    sqlCommand = new SqlCommand("Select * FROM " +
                         "dbo.[Users] " +
-                        $"Where login='{LoginTb.Text}'",
+                        $"Where Login='{LoginTb.Text}'",
                         sqlConnection);
-                    dataReader = SqlCommand.ExecuteReader();
+                    dataReader = sqlCommand.ExecuteReader();
                     if (!dataReader.HasRows) {
                         MBClass.ErrorMB("Пользователь отсутствует!");
                     }
@@ -62,16 +62,12 @@ namespace Specra.WindowFolder
                             {
 
                                 case "1":
-                                    MBClass.InfoMB("Менеджер\nЗдраствуйте "
-                                        + dataReader[1].ToString());
+                                    new ManagerFolder.MenuManagerWindow().Show();
+                                    Close();
                                     break;
                                 case "2":
-                                    MBClass.InfoMB("Админ\nЗдраствуйте "
-                                        + dataReader[1].ToString());
-
                                     new AdminFolder.MenuAdminWindow().Show();
                                     Close();
-
                                     break;
                             }
                         }

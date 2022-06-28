@@ -1,7 +1,9 @@
 ﻿using Specra.ClassFolder;
 using System;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Windows;
+using System.Windows.Media;
 
 namespace Specra.WindowFolder.ManagerFolder
 {
@@ -10,17 +12,14 @@ namespace Specra.WindowFolder.ManagerFolder
     /// </summary>
     public partial class AddPerformanseWindow : Window
     {
-        CBClass cB;
         SqlConnection sqlConnection =
-           new SqlConnection(@"Data Source=DESKTOP-VNUSCBE\KOMMO;
-                                Initial Catalog=up02oros;
-                                Integrated Security=True");
-        SqlCommand SqlCommand;
-
+            new SqlConnection(@"Data Source=(local)\SQLEXPRESS;
+                                Initial Catalog=PP03Oros;
+                                       Integrated Security=True");
+        SqlCommand sqlCommand;
         public AddPerformanseWindow()
         {
             InitializeComponent();
-            cB = new CBClass();
         }
 
 
@@ -39,31 +38,36 @@ namespace Specra.WindowFolder.ManagerFolder
             try
             {
                 sqlConnection.Open();
-                SqlCommand = new SqlCommand("Insert Into dbo.[Performanse] " +
-                    $"Values ('{titleTb.Text}'," +
-                    $"'{lastnameofthestagedirectorTb.Text}'," +
-                    $"'{fitstnameofthestagedirectorTb.Text}'," +
-                    $"'{patronymicofthestagedirectorTb.Text}'," +
-                    $"'{lastnameoftheproductiondesignerTb.Text}'," +
-                    $"'{firstnameoftheproductiondesignerTb.Text}'," +
-                    $"'{patronymicoftheproductiondesignerTb.Text}'," +
-                    $"'{lastnameofthestagemanagerTb.Text}'," +
-                    $"'{firstnameofthestagemanagerTb.Text}'," +
-                    $"'{patronymicofthestagemanagerTb.Text}'," +
-                    $"'{lastnameoftheauthorTb.Text}'," +
-                    $"'{firstnameoftheauthorTb.Text}'," +
-                    $"'{patronymicoftheauthorTb.Text}'," +
-                    $"'{genreTb.Text}'," +
-                    $"'{typeTb.Text}'," +
-                    $"'{ticketpriceTb.Text}'," +
-                    $"'{dateTb.Text}'," +
-                    $"'{addressoftheeventTb.Text}'," +
-                    $"'{numberofviewersTb.Text}'," +
-                    $"'{numberofticketspurchasedTb.Text}'," +
-                    $"'{numberofavailableseatsTb.Text}')",
+                sqlCommand = new SqlCommand("Insert Into dbo.[Performanse] " +
+                    "(title, LastName, FitstName, Patronymic, LastNameProduction, FirstNameProduction, " +
+                    "Patronymicproduction, LastNameStage, " +
+                    "FirstNameStage, PatronymicStage, LastNameAuthor," +
+                    " FirstNameAuthor, PatronymicAuthor, genre, type, " +
+                    "TicketPrice, date, AddressEvent, NumberViewers, NumberPurchased, NumberSeats) " +
+                    $"Values ('{title.Text}'," +
+                    $"'{LastName.Text}'," +
+                    $"'{FitstName.Text}'," +
+                    $"'{Patronymic.Text}'," +
+                    $"'{LastNameProduction.Text}'," +
+                    $"'{FirstNameProduction.Text}'," +
+                    $"'{Patronymicproduction.Text}'," +
+                    $"'{LastNameStage.Text}'," +
+                    $"'{FirstNameStage.Text}'," +
+                    $"'{PatronymicStage.Text}'," +
+                    $"'{LastNameAuthor.Text}'," +
+                    $"'{FirstNameAuthor.Text}'," +
+                    $"'{PatronymicAuthor.Text}'," +
+                    $"'{genre.Text}'," +
+                    $"'{type.Text}'," +
+                    $"'{TicketPrice.Text}'," +
+                    $"'{date.Text}'," +
+                    $"'{AddressEvent.Text}'," +
+                    $"'{NumberViewers.Text}'," +
+                    $"'{NumberPurchased.Text}'," +
+                    $"'{NumberSeats.Text}')",
                     sqlConnection);
-                SqlCommand.ExecuteNonQuery();
-                MBClass.InfoMB($"Пользователь  успешно добавлен");
+                sqlCommand.ExecuteNonQuery();
+                MBClass.InfoMB($"Представление {title.Text} " + " успешно добавлено");
             }
             catch (Exception ex)
             {

@@ -25,17 +25,17 @@ namespace Specra.WindowFolder.AdminFolder
         {
             InitializeComponent();
             dGClass = new DGClass(ListUserDG);
-            dGClass.LoadDG("Select * From dbo.[Users]");
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            dGClass.LoadDG("Select * From dbo.[Users]");
         }
 
         private void SearchTb_TextChanged(object sender, TextChangedEventArgs e)
         {
             dGClass.LoadDG("Select * From dbo.[Users] " +
-                $"Where login Like '%{SearchTb.Text}%' ");
+                $"Where Login Like '%{SearchTb.Text}%' ");
         }
 
         private void AddIm_Click(object sender, RoutedEventArgs e)

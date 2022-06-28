@@ -35,7 +35,7 @@ namespace Specra.WindowFolder.ManagerFolder
         private void SearchTb_TextChanged(object sender, TextChangedEventArgs e)
         {
             dGClass.LoadDG("Select * From dbo.[Performanse] " +
-                $"Where login Like '%{SearchTb.Text}%' ");
+                $"Where Login Like '%{SearchTb.Text}%' ");
         }
 
         private void AddIm_Click(object sender, RoutedEventArgs e)
@@ -54,7 +54,7 @@ namespace Specra.WindowFolder.ManagerFolder
             {
                 try
                 {
-                    VariableClass.UserId = dGClass.SelectId();
+                    VariableClass.PerfomanceId = dGClass.SelectId();
                     new EditPerformanseWindow().ShowDialog();
                     dGClass.LoadDG("Select * From dbo.[Performanse]");
                 }

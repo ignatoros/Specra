@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Specra.WindowFolder.AdminFolder"
         mc:Ignorable="d"
+        Loaded="Window_Loaded"
         Title="MenuAdminWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -51,16 +52,16 @@
                   MouseDoubleClick="ListUserDG_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="№ п/п"
-                                    Binding="{Binding IDUser}"
+                                    Binding="{Binding UserID}"
                                     Width="50"/>
                 <DataGridTextColumn Header="Логин"
-                                    Binding="{Binding login}"
+                                    Binding="{Binding Login}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Пароль"
-                                    Binding="{Binding password}"
+                                    Binding="{Binding Password}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Роль"
-                                    Binding="{Binding IDRole}"
+                                    Binding="{Binding RoleID}"
                                     Width="*"/>
             </DataGrid.Columns>
         </DataGrid>

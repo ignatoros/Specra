@@ -12,9 +12,9 @@ namespace Specra.ClassFolder
     class CBClass
     {
         SqlConnection sqlConnection =
-           new SqlConnection(@"Data Source=DESKTOP-VNUSCBE\KOMMO;
-                                Initial Catalog=up02oros;
-                                Integrated Security=True");
+            new SqlConnection(@"Data Source=(local)\SQLEXPRESS;
+                                Initial Catalog=PP03Oros;
+                                       Integrated Security=True");
         SqlDataAdapter sqlData;
         DataSet dataSet;
 
@@ -24,15 +24,15 @@ namespace Specra.ClassFolder
             {
                 sqlConnection.Open();
                 sqlData = new SqlDataAdapter("Select * " +
-                    "From dbo.[Role1]",
+                    "From dbo.[Role]",
                     sqlConnection);
                 dataSet = new DataSet();
-                sqlData.Fill(dataSet, "Role1");
-                comboBox.ItemsSource = dataSet.Tables["Role1"].DefaultView;
+                sqlData.Fill(dataSet, "Role");
+                comboBox.ItemsSource = dataSet.Tables["Role"].DefaultView;
                 comboBox.DisplayMemberPath = dataSet.
-                    Tables["Role1"].Columns["RoleName"].ToString();
+                    Tables["Role"].Columns["RoleName"].ToString();
                 comboBox.SelectedValuePath = dataSet.
-                   Tables["Role1"].Columns["RoleID"].ToString();
+                   Tables["Role"].Columns["RoleID"].ToString();
             }
             catch (Exception ex)
             {

@@ -59,11 +59,6 @@
     <Compile Include="ClassFolder\DGClass.cs" />
     <Compile Include="ClassFolder\MBClass.cs" />
     <Compile Include="ClassFolder\VariableClass.cs" />
-    <Compile Include="up02orosDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>up02orosDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="WindowFolder\ManagerFolder\AddPerformanseWindow.xaml.cs">
       <DependentUpon>AddPerformanseWindow.xaml</DependentUpon>
     </Compile>
@@ -154,17 +149,6 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="up02orosDataSet.xsc">
-      <DependentUpon>up02orosDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="up02orosDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>up02orosDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="up02orosDataSet.xss">
-      <DependentUpon>up02orosDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

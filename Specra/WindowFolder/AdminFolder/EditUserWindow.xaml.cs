@@ -24,15 +24,14 @@ namespace Specra.WindowFolder.AdminFolder
 
         CBClass cB = new CBClass();
         SqlConnection sqlConnection =
-           new SqlConnection(@"Data Source=DESKTOP-VNUSCBE\KOMMO;
-                                Initial Catalog=up02oros;
-                                Integrated Security=True");
+            new SqlConnection(@"Data Source=(local)\SQLEXPRESS;
+                                Initial Catalog=PP03Oros;
+                                       Integrated Security=True");
         SqlCommand SqlCommand;
         SqlDataReader dataReader;
         public EditUserWindow()
         {
             InitializeComponent();
-            Window_Loaded();
             cB = new CBClass();
         }
         private void EditBtn_Click(object sender, RoutedEventArgs e)
@@ -43,10 +42,10 @@ namespace Specra.WindowFolder.AdminFolder
                 SqlCommand =
                     new SqlCommand("Update " +
                     "dbo.[Users] Set " +
-                    $"password='{PasswordTb.Text}'," +
-                    $"login='{LoginTb.Text}'," +
-                    $"IDRole='{RoleCb.SelectedValue.ToString()}' " +
-                    $"Where IDUser='{VariableClass.UserId}'",
+                    $"Password='{PasswordTb.Text}'," +
+                    $"Login='{LoginTb.Text}'," +
+                    $"RoleID='{RoleCb.SelectedValue.ToString()}' " +
+                    $"Where UserID='{VariableClass.UserId}'",
                     sqlConnection);
                 SqlCommand.ExecuteNonQuery();
                 MBClass.InfoMB($"Данные пользователя " +
@@ -62,23 +61,21 @@ namespace Specra.WindowFolder.AdminFolder
             }
         }
 
-        private void Window_Loaded()
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine(VariableClass.UserId);
             cB.RoleCBLoad(RoleCb);
             
             try
             {
                 sqlConnection.Open();
                 SqlCommand = new SqlCommand("Select * from dbo.[Users] " +
-                    $"Where IDUser='{VariableClass.UserId}'",
+                    $"Where UserID='{VariableClass.UserId}'",
                     sqlConnection);
                 dataReader = SqlCommand.ExecuteReader();
                 dataReader.Read();
                 LoginTb.Text = dataReader[1].ToString();
                 PasswordTb.Text = dataReader[2].ToString();
                 RoleCb.SelectedValue = dataReader[3].ToString();
-                Debug.WriteLine($"Role: {dataReader[3].ToString()}");
             }
             catch (Exception ex)
             {
@@ -100,9 +97,6 @@ namespace Specra.WindowFolder.AdminFolder
             new MenuAdminWindow().ShowDialog();
         }
 
-        private void RoleCb_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+ 
     }
 }

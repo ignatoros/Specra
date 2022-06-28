@@ -9,5 +9,6 @@ namespace Specra.ClassFolder
     internal class VariableClass
     {
         public static string UserId { get; set; }
+        public static string PerfomanceId { get; set; }
     }
 }

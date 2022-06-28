@@ -23,9 +23,9 @@ namespace Specra.WindowFolder.AdminFolder
     {
         CBClass cB;
         SqlConnection sqlConnection =
-           new SqlConnection(@"Data Source=DESKTOP-VNUSCBE\KOMMO;
-                                Initial Catalog=up02oros;
-                                Integrated Security=True");
+            new SqlConnection(@"Data Source=(local)\SQLEXPRESS;
+                                Initial Catalog=PP03Oros;
+                                       Integrated Security=True");
         SqlCommand SqlCommand;
 
         public AddUserWindow()

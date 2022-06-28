@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Specra.WindowFolder.ManagerFolder"
         mc:Ignorable="d"
-        Title="MenuManagerWindow" Height="450" Width="800">
+        Loaded="Window_Loaded"
+        Title="MenuManagerWindow" Height="450" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
@@ -51,46 +52,46 @@
                   MouseDoubleClick="ListUserDG_MouseDoubleClick">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="№ п/п"
-                                    Binding="{Binding [№ p/p]}"
+                                    Binding="{Binding id}"
                                     Width="50"/>
                 <DataGridTextColumn Header="Тип"
                                     Binding="{Binding title}"
                                     Width="*"/>
                 <DataGridTextColumn Header="фамилия"
-                                    Binding="{Binding [last name of the stage director]}"
+                                    Binding="{Binding LastName}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Имя"
-                                    Binding="{Binding [fitst name of the stage director]}"
+                                    Binding="{Binding FitstName}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Отчество"
-                                    Binding="{Binding [patronymic of the stage director]}"
+                                    Binding="{Binding Patronymic}"
                                     Width="*"/>
                 <DataGridTextColumn Header="фамилия"
-                                    Binding="{Binding [last name of the production designer]}"
+                                    Binding="{Binding LastNameProduction}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Имя"
-                                    Binding="{Binding [fitst name of the production designer]}"
+                                    Binding="{Binding FirstNameProduction}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Отчество"
-                                    Binding="{Binding [patronymic of the production designer]}"
+                                    Binding="{Binding Patronymicproduction}"
                                     Width="*"/>
                 <DataGridTextColumn Header="фамилия"
-                                    Binding="{Binding [last name of the stage manager]}"
+                                    Binding="{Binding LastNameStage}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Имя"
-                                    Binding="{Binding [fitst name of the stage manager]}"
+                                    Binding="{Binding FirstNameStage}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Отчество"
-                                    Binding="{Binding [patronymic of the stage manager]}"
+                                    Binding="{Binding PatronymicStage}"
                                     Width="*"/>
                 <DataGridTextColumn Header="фамилия"
-                                    Binding="{Binding [last name of the author]}"
+                                    Binding="{Binding LastNameAuthor}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Имя"
-                                    Binding="{Binding [fitst name of the author]}"
+                                    Binding="{Binding FirstNameAuthor}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Отчество"
-                                    Binding="{Binding [patronymic of the author]}"
+                                    Binding="{Binding PatronymicAuthor}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Жанр"
                                     Binding="{Binding genre}"
@@ -99,22 +100,22 @@
                                     Binding="{Binding type}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Цена"
-                                    Binding="{Binding [ticket price]}"
+                                    Binding="{Binding TicketPrice}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Дата"
                                     Binding="{Binding date}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Адрес"
-                                    Binding="{Binding [address of the event]}"
+                                    Binding="{Binding AddressEvent}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Зрители"
-                                    Binding="{Binding [number of viewers]}"
+                                    Binding="{Binding NumberViewers}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Билеты"
-                                    Binding="{Binding [number of tickets purchased]}"
+                                    Binding="{Binding NumberPurchased}"
                                     Width="*"/>
                 <DataGridTextColumn Header="Места"
-                                    Binding="{Binding [number of available seats]}"
+                                    Binding="{Binding NumberSeats}"
                                     Width="*"/>
                 
                 
