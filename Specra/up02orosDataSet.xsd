@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="up02orosDataSet" targetNamespace="http://tempuri.org/up02orosDataSet.xsd" xmlns:mstns="http://tempuri.org/up02orosDataSet.xsd" xmlns="http://tempuri.org/up02orosDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="up02orosConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="up02orosConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Specra.Properties.Settings.GlobalReference.Default.up02orosConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PerformanseTableAdapter" GeneratorDataComponentClassName="PerformanseTableAdapter" Name="Performanse" UserDataComponentName="PerformanseTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="up02orosConnectionString (Settings)" DbObjectName="up02oros.dbo.Performanse" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Performanse] WHERE (([№ p/p] = @p2) AND ((@IsNull_title = 1 AND [title] IS NULL) OR ([title] = @Original_title)) AND ((@IsNull_last_name_of_the_stage_director = 1 AND [last name of the stage director] IS NULL) OR ([last name of the stage director] = @Original_last_name_of_the_stage_director)) AND ((@IsNull_fitst_name_of_the_stage_director = 1 AND [fitst name of the stage director] IS NULL) OR ([fitst name of the stage director] = @Original_fitst_name_of_the_stage_director)) AND ((@IsNull_patronymic_of_the_stage_director = 1 AND [patronymic of the stage director] IS NULL) OR ([patronymic of the stage director] = @Original_patronymic_of_the_stage_director)) AND ((@IsNull_last_name_of_the_production_designer = 1 AND [last name of the production designer] IS NULL) OR ([last name of the production designer] = @Original_last_name_of_the_production_designer)) AND ((@IsNull_first_name_of_the_production_designer = 1 AND [first name of the production designer] IS NULL) OR ([first name of the production designer] = @Original_first_name_of_the_production_designer)) AND ((@IsNull_patronymic_of_the_production_designer = 1 AND [patronymic of the production designer] IS NULL) OR ([patronymic of the production designer] = @Original_patronymic_of_the_production_designer)) AND ((@IsNull_last_name_of_the_stage_manager = 1 AND [last name of the stage manager] IS NULL) OR ([last name of the stage manager] = @Original_last_name_of_the_stage_manager)) AND ((@IsNull_first_name_of_the_stage_manager = 1 AND [first name of the stage manager] IS NULL) OR ([first name of the stage manager] = @Original_first_name_of_the_stage_manager)) AND ((@IsNull_patronymic_of_the_stage_manager = 1 AND [patronymic of the stage manager] IS NULL) OR ([patronymic of the stage manager] = @Original_patronymic_of_the_stage_manager)) AND ((@IsNull_last_name_of_the_author = 1 AND [last name of the author] IS NULL) OR ([last name of the author] = @Original_last_name_of_the_author)) AND ((@IsNull_first_name_of_the_author = 1 AND [first name of the author] IS NULL) OR ([first name of the author] = @Original_first_name_of_the_author)) AND ((@IsNull_patronymic_of_the_author = 1 AND [patronymic of the author] IS NULL) OR ([patronymic of the author] = @Original_patronymic_of_the_author)) AND ((@IsNull_genre = 1 AND [genre] IS NULL) OR ([genre] = @Original_genre)) AND ((@IsNull_type = 1 AND [type] IS NULL) OR ([type] = @Original_type)) AND ((@IsNull_ticket_price = 1 AND [ticket price] IS NULL) OR ([ticket price] = @Original_ticket_price)) AND ((@IsNull_date = 1 AND [date] IS NULL) OR ([date] = @Original_date)) AND ((@IsNull_address_of_the_event = 1 AND [address of the event] IS NULL) OR ([address of the event] = @Original_address_of_the_event)) AND ((@IsNull_number_of_viewers = 1 AND [number of viewers] IS NULL) OR ([number of viewers] = @Original_number_of_viewers)) AND ((@IsNull_number_of_tickets_purchased = 1 AND [number of tickets purchased] IS NULL) OR ([number of tickets purchased] = @Original_number_of_tickets_purchased)) AND ((@IsNull_number_of_available_seats = 1 AND [number of available seats] IS NULL) OR ([number of available seats] = @Original_number_of_available_seats)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="№ p/p" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_title" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="title" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_title" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_stage_director" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the stage director" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage director" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fitst_name_of_the_stage_director" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fitst name of the stage director" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_fitst_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="fitst name of the stage director" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_stage_director" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the stage director" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage director" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_production_designer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the production designer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the production designer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_first_name_of_the_production_designer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="first name of the production designer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_first_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the production designer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_production_designer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the production designer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the production designer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_stage_manager" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the stage manager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_first_name_of_the_stage_manager" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="first name of the stage manager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_first_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_stage_manager" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the stage manager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage manager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_author" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the author" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the author" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_first_name_of_the_author" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="first name of the author" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_first_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the author" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_author" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the author" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the author" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_genre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="genre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_genre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="genre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ticket_price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ticket price" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ticket_price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ticket price" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_address_of_the_event" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="address of the event" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_address_of_the_event" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="address of the event" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_number_of_viewers" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of viewers" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_number_of_viewers" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of viewers" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_number_of_tickets_purchased" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of tickets purchased" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_number_of_tickets_purchased" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of tickets purchased" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_number_of_available_seats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of available seats" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_number_of_available_seats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of available seats" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Performanse] ([title], [last name of the stage director], [fitst name of the stage director], [patronymic of the stage director], [last name of the production designer], [first name of the production designer], [patronymic of the production designer], [last name of the stage manager], [first name of the stage manager], [patronymic of the stage manager], [last name of the author], [first name of the author], [patronymic of the author], [genre], [type], [ticket price], [date], [address of the event], [number of viewers], [number of tickets purchased], [number of available seats]) VALUES (@title, @last_name_of_the_stage_director, @fitst_name_of_the_stage_director, @patronymic_of_the_stage_director, @last_name_of_the_production_designer, @first_name_of_the_production_designer, @patronymic_of_the_production_designer, @last_name_of_the_stage_manager, @first_name_of_the_stage_manager, @patronymic_of_the_stage_manager, @last_name_of_the_author, @first_name_of_the_author, @patronymic_of_the_author, @genre, @type, @ticket_price, @date, @address_of_the_event, @number_of_viewers, @number_of_tickets_purchased, @number_of_available_seats);
+SELECT [№ p/p], title, [last name of the stage director], [fitst name of the stage director], [patronymic of the stage director], [last name of the production designer], [first name of the production designer], [patronymic of the production designer], [last name of the stage manager], [first name of the stage manager], [patronymic of the stage manager], [last name of the author], [first name of the author], [patronymic of the author], genre, type, [ticket price], date, [address of the event], [number of viewers], [number of tickets purchased], [number of available seats] FROM Performanse WHERE ([№ p/p] = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@title" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage director" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@fitst_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="fitst name of the stage director" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage director" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the production designer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@first_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the production designer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the production designer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@first_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage manager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the author" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@first_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the author" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the author" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@genre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="genre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ticket_price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ticket price" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@address_of_the_event" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="address of the event" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@number_of_viewers" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of viewers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@number_of_tickets_purchased" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of tickets purchased" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@number_of_available_seats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of available seats" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [№ p/p], title, [last name of the stage director], [fitst name of the stage director], [patronymic of the stage director], [last name of the production designer], [first name of the production designer], [patronymic of the production designer], [last name of the stage manager], [first name of the stage manager], [patronymic of the stage manager], [last name of the author], [first name of the author], [patronymic of the author], genre, type, [ticket price], date, [address of the event], [number of viewers], [number of tickets purchased], [number of available seats] FROM dbo.Performanse</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Performanse] SET [title] = @title, [last name of the stage director] = @last_name_of_the_stage_director, [fitst name of the stage director] = @fitst_name_of_the_stage_director, [patronymic of the stage director] = @patronymic_of_the_stage_director, [last name of the production designer] = @last_name_of_the_production_designer, [first name of the production designer] = @first_name_of_the_production_designer, [patronymic of the production designer] = @patronymic_of_the_production_designer, [last name of the stage manager] = @last_name_of_the_stage_manager, [first name of the stage manager] = @first_name_of_the_stage_manager, [patronymic of the stage manager] = @patronymic_of_the_stage_manager, [last name of the author] = @last_name_of_the_author, [first name of the author] = @first_name_of_the_author, [patronymic of the author] = @patronymic_of_the_author, [genre] = @genre, [type] = @type, [ticket price] = @ticket_price, [date] = @date, [address of the event] = @address_of_the_event, [number of viewers] = @number_of_viewers, [number of tickets purchased] = @number_of_tickets_purchased, [number of available seats] = @number_of_available_seats WHERE (([№ p/p] = @p2) AND ((@IsNull_title = 1 AND [title] IS NULL) OR ([title] = @Original_title)) AND ((@IsNull_last_name_of_the_stage_director = 1 AND [last name of the stage director] IS NULL) OR ([last name of the stage director] = @Original_last_name_of_the_stage_director)) AND ((@IsNull_fitst_name_of_the_stage_director = 1 AND [fitst name of the stage director] IS NULL) OR ([fitst name of the stage director] = @Original_fitst_name_of_the_stage_director)) AND ((@IsNull_patronymic_of_the_stage_director = 1 AND [patronymic of the stage director] IS NULL) OR ([patronymic of the stage director] = @Original_patronymic_of_the_stage_director)) AND ((@IsNull_last_name_of_the_production_designer = 1 AND [last name of the production designer] IS NULL) OR ([last name of the production designer] = @Original_last_name_of_the_production_designer)) AND ((@IsNull_first_name_of_the_production_designer = 1 AND [first name of the production designer] IS NULL) OR ([first name of the production designer] = @Original_first_name_of_the_production_designer)) AND ((@IsNull_patronymic_of_the_production_designer = 1 AND [patronymic of the production designer] IS NULL) OR ([patronymic of the production designer] = @Original_patronymic_of_the_production_designer)) AND ((@IsNull_last_name_of_the_stage_manager = 1 AND [last name of the stage manager] IS NULL) OR ([last name of the stage manager] = @Original_last_name_of_the_stage_manager)) AND ((@IsNull_first_name_of_the_stage_manager = 1 AND [first name of the stage manager] IS NULL) OR ([first name of the stage manager] = @Original_first_name_of_the_stage_manager)) AND ((@IsNull_patronymic_of_the_stage_manager = 1 AND [patronymic of the stage manager] IS NULL) OR ([patronymic of the stage manager] = @Original_patronymic_of_the_stage_manager)) AND ((@IsNull_last_name_of_the_author = 1 AND [last name of the author] IS NULL) OR ([last name of the author] = @Original_last_name_of_the_author)) AND ((@IsNull_first_name_of_the_author = 1 AND [first name of the author] IS NULL) OR ([first name of the author] = @Original_first_name_of_the_author)) AND ((@IsNull_patronymic_of_the_author = 1 AND [patronymic of the author] IS NULL) OR ([patronymic of the author] = @Original_patronymic_of_the_author)) AND ((@IsNull_genre = 1 AND [genre] IS NULL) OR ([genre] = @Original_genre)) AND ((@IsNull_type = 1 AND [type] IS NULL) OR ([type] = @Original_type)) AND ((@IsNull_ticket_price = 1 AND [ticket price] IS NULL) OR ([ticket price] = @Original_ticket_price)) AND ((@IsNull_date = 1 AND [date] IS NULL) OR ([date] = @Original_date)) AND ((@IsNull_address_of_the_event = 1 AND [address of the event] IS NULL) OR ([address of the event] = @Original_address_of_the_event)) AND ((@IsNull_number_of_viewers = 1 AND [number of viewers] IS NULL) OR ([number of viewers] = @Original_number_of_viewers)) AND ((@IsNull_number_of_tickets_purchased = 1 AND [number of tickets purchased] IS NULL) OR ([number of tickets purchased] = @Original_number_of_tickets_purchased)) AND ((@IsNull_number_of_available_seats = 1 AND [number of available seats] IS NULL) OR ([number of available seats] = @Original_number_of_available_seats)));
+SELECT [№ p/p], title, [last name of the stage director], [fitst name of the stage director], [patronymic of the stage director], [last name of the production designer], [first name of the production designer], [patronymic of the production designer], [last name of the stage manager], [first name of the stage manager], [patronymic of the stage manager], [last name of the author], [first name of the author], [patronymic of the author], genre, type, [ticket price], date, [address of the event], [number of viewers], [number of tickets purchased], [number of available seats] FROM Performanse WHERE ([№ p/p] = @__p_p)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@title" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage director" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@fitst_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="fitst name of the stage director" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage director" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the production designer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@first_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the production designer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the production designer" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@first_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage manager" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@last_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the author" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@first_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the author" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@patronymic_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the author" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@genre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="genre" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ticket_price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ticket price" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="date" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@address_of_the_event" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="address of the event" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@number_of_viewers" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of viewers" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@number_of_tickets_purchased" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of tickets purchased" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@number_of_available_seats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of available seats" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="№ p/p" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_title" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="title" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_title" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_stage_director" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the stage director" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage director" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_fitst_name_of_the_stage_director" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="fitst name of the stage director" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_fitst_name_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="fitst name of the stage director" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_stage_director" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the stage director" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_stage_director" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage director" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_production_designer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the production designer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the production designer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_first_name_of_the_production_designer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="first name of the production designer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_first_name_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the production designer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_production_designer" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the production designer" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_production_designer" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the production designer" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_stage_manager" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the stage manager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_first_name_of_the_stage_manager" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="first name of the stage manager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_first_name_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the stage manager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_stage_manager" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the stage manager" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_stage_manager" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the stage manager" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_last_name_of_the_author" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="last name of the author" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_last_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="last name of the author" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_first_name_of_the_author" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="first name of the author" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_first_name_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="first name of the author" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_patronymic_of_the_author" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="patronymic of the author" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_patronymic_of_the_author" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="patronymic of the author" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_genre" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="genre" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_genre" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="genre" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_type" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_type" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="type" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_ticket_price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ticket price" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_ticket_price" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ticket price" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_date" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="date" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_date" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="date" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_address_of_the_event" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="address of the event" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_address_of_the_event" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="address of the event" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_number_of_viewers" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of viewers" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_number_of_viewers" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of viewers" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_number_of_tickets_purchased" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of tickets purchased" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_number_of_tickets_purchased" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of tickets purchased" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_number_of_available_seats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of available seats" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_number_of_available_seats" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="number of available seats" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="__p_p" ColumnName="№ p/p" DataSourceName="up02oros.dbo.Performanse" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@__p_p" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="№ p/p" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="№ p/p" DataSetColumn="№ p/p" />
+              <Mapping SourceColumn="title" DataSetColumn="title" />
+              <Mapping SourceColumn="last name of the stage director" DataSetColumn="last name of the stage director" />
+              <Mapping SourceColumn="fitst name of the stage director" DataSetColumn="fitst name of the stage director" />
+              <Mapping SourceColumn="patronymic of the stage director" DataSetColumn="patronymic of the stage director" />
+              <Mapping SourceColumn="last name of the production designer" DataSetColumn="last name of the production designer" />
+              <Mapping SourceColumn="first name of the production designer" DataSetColumn="first name of the production designer" />
+              <Mapping SourceColumn="patronymic of the production designer" DataSetColumn="patronymic of the production designer" />
+              <Mapping SourceColumn="last name of the stage manager" DataSetColumn="last name of the stage manager" />
+              <Mapping SourceColumn="first name of the stage manager" DataSetColumn="first name of the stage manager" />
+              <Mapping SourceColumn="patronymic of the stage manager" DataSetColumn="patronymic of the stage manager" />
+              <Mapping SourceColumn="last name of the author" DataSetColumn="last name of the author" />
+              <Mapping SourceColumn="first name of the author" DataSetColumn="first name of the author" />
+              <Mapping SourceColumn="patronymic of the author" DataSetColumn="patronymic of the author" />
+              <Mapping SourceColumn="genre" DataSetColumn="genre" />
+              <Mapping SourceColumn="type" DataSetColumn="type" />
+              <Mapping SourceColumn="ticket price" DataSetColumn="ticket price" />
+              <Mapping SourceColumn="date" DataSetColumn="date" />
+              <Mapping SourceColumn="address of the event" DataSetColumn="address of the event" />
+              <Mapping SourceColumn="number of viewers" DataSetColumn="number of viewers" />
+              <Mapping SourceColumn="number of tickets purchased" DataSetColumn="number of tickets purchased" />
+              <Mapping SourceColumn="number of available seats" DataSetColumn="number of available seats" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Role1TableAdapter" GeneratorDataComponentClassName="Role1TableAdapter" Name="Role1" UserDataComponentName="Role1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="up02orosConnectionString (Settings)" DbObjectName="up02oros.dbo.Role1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Role1] WHERE (([№ p/p role] = @p2) AND ((@IsNull_title_role = 1 AND [title role] IS NULL) OR ([title role] = @Original_title_role)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="№ p/p role" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_title_role" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="title role" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_title_role" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title role" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Role1] ([title role]) VALUES (@title_role);
+SELECT [№ p/p role], [title role] FROM Role1 WHERE ([№ p/p role] = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@title_role" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title role" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [№ p/p role], [title role] FROM dbo.Role1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Role1] SET [title role] = @title_role WHERE (([№ p/p role] = @p2) AND ((@IsNull_title_role = 1 AND [title role] IS NULL) OR ([title role] = @Original_title_role)));
+SELECT [№ p/p role], [title role] FROM Role1 WHERE ([№ p/p role] = @__p_p_role)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@title_role" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title role" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="№ p/p role" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_title_role" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="title role" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_title_role" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="title role" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="__p_p_role" ColumnName="№ p/p role" DataSourceName="up02oros.dbo.Role1" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@__p_p_role" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="№ p/p role" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="№ p/p role" DataSetColumn="№ p/p role" />
+              <Mapping SourceColumn="title role" DataSetColumn="title role" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UserTableAdapter" GeneratorDataComponentClassName="UserTableAdapter" Name="User" UserDataComponentName="UserTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="up02orosConnectionString (Settings)" DbObjectName="up02oros.dbo.[User]" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[User] ([login], [password], [ID role]) VALUES (@login, @password, @ID_role)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@login" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="login" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@password" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="password" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID_role" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID role" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [[№ p/p]] user], login, password, [ID role] FROM dbo.[User]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="[№ p/p] user" DataSetColumn="[№ p/p] user" />
+              <Mapping SourceColumn="login" DataSetColumn="login" />
+              <Mapping SourceColumn="password" DataSetColumn="password" />
+              <Mapping SourceColumn="ID role" DataSetColumn="ID role" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="up02orosDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="up02orosDataSet" msprop:Generator_DataSetName="up02orosDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Performanse" msprop:Generator_RowEvHandlerName="PerformanseRowChangeEventHandler" msprop:Generator_RowDeletedName="PerformanseRowDeleted" msprop:Generator_RowDeletingName="PerformanseRowDeleting" msprop:Generator_RowEvArgName="PerformanseRowChangeEvent" msprop:Generator_TablePropName="Performanse" msprop:Generator_RowChangedName="PerformanseRowChanged" msprop:Generator_RowChangingName="PerformanseRowChanging" msprop:Generator_TableClassName="PerformanseDataTable" msprop:Generator_RowClassName="PerformanseRow" msprop:Generator_TableVarName="tablePerformanse" msprop:Generator_UserTableName="Performanse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x2116__x0020_p_x002F_p" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="___p_p" msprop:Generator_ColumnPropNameInTable="___p_pColumn" msprop:Generator_ColumnVarNameInTable="_column__p_p" msprop:Generator_UserColumnName="№ p/p" type="xs:int" />
+              <xs:element name="title" msprop:Generator_ColumnPropNameInRow="title" msprop:Generator_ColumnPropNameInTable="titleColumn" msprop:Generator_ColumnVarNameInTable="columntitle" msprop:Generator_UserColumnName="title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_x0020_name_x0020_of_x0020_the_x0020_stage_x0020_director" msprop:Generator_ColumnPropNameInRow="last_name_of_the_stage_director" msprop:Generator_ColumnPropNameInTable="last_name_of_the_stage_directorColumn" msprop:Generator_ColumnVarNameInTable="columnlast_name_of_the_stage_director" msprop:Generator_UserColumnName="last name of the stage director" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fitst_x0020_name_x0020_of_x0020_the_x0020_stage_x0020_director" msprop:Generator_ColumnPropNameInRow="fitst_name_of_the_stage_director" msprop:Generator_ColumnPropNameInTable="fitst_name_of_the_stage_directorColumn" msprop:Generator_ColumnVarNameInTable="columnfitst_name_of_the_stage_director" msprop:Generator_UserColumnName="fitst name of the stage director" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patronymic_x0020_of_x0020_the_x0020_stage_x0020_director" msprop:Generator_ColumnPropNameInRow="patronymic_of_the_stage_director" msprop:Generator_ColumnPropNameInTable="patronymic_of_the_stage_directorColumn" msprop:Generator_ColumnVarNameInTable="columnpatronymic_of_the_stage_director" msprop:Generator_UserColumnName="patronymic of the stage director" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_x0020_name_x0020_of_x0020_the_x0020_production_x0020_designer" msprop:Generator_ColumnPropNameInRow="last_name_of_the_production_designer" msprop:Generator_ColumnPropNameInTable="last_name_of_the_production_designerColumn" msprop:Generator_ColumnVarNameInTable="columnlast_name_of_the_production_designer" msprop:Generator_UserColumnName="last name of the production designer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="first_x0020_name_x0020_of_x0020_the_x0020_production_x0020_designer" msprop:Generator_ColumnPropNameInRow="first_name_of_the_production_designer" msprop:Generator_ColumnPropNameInTable="first_name_of_the_production_designerColumn" msprop:Generator_ColumnVarNameInTable="columnfirst_name_of_the_production_designer" msprop:Generator_UserColumnName="first name of the production designer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patronymic_x0020_of_x0020_the_x0020_production_x0020_designer" msprop:Generator_ColumnPropNameInRow="patronymic_of_the_production_designer" msprop:Generator_ColumnPropNameInTable="patronymic_of_the_production_designerColumn" msprop:Generator_ColumnVarNameInTable="columnpatronymic_of_the_production_designer" msprop:Generator_UserColumnName="patronymic of the production designer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_x0020_name_x0020_of_x0020_the_x0020_stage_x0020_manager" msprop:Generator_ColumnPropNameInRow="last_name_of_the_stage_manager" msprop:Generator_ColumnPropNameInTable="last_name_of_the_stage_managerColumn" msprop:Generator_ColumnVarNameInTable="columnlast_name_of_the_stage_manager" msprop:Generator_UserColumnName="last name of the stage manager" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="first_x0020_name_x0020_of_x0020_the_x0020_stage_x0020_manager" msprop:Generator_ColumnPropNameInRow="first_name_of_the_stage_manager" msprop:Generator_ColumnPropNameInTable="first_name_of_the_stage_managerColumn" msprop:Generator_ColumnVarNameInTable="columnfirst_name_of_the_stage_manager" msprop:Generator_UserColumnName="first name of the stage manager" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patronymic_x0020_of_x0020_the_x0020_stage_x0020_manager" msprop:Generator_ColumnPropNameInRow="patronymic_of_the_stage_manager" msprop:Generator_ColumnPropNameInTable="patronymic_of_the_stage_managerColumn" msprop:Generator_ColumnVarNameInTable="columnpatronymic_of_the_stage_manager" msprop:Generator_UserColumnName="patronymic of the stage manager" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="last_x0020_name_x0020_of_x0020_the_x0020_author" msprop:Generator_ColumnPropNameInRow="last_name_of_the_author" msprop:Generator_ColumnPropNameInTable="last_name_of_the_authorColumn" msprop:Generator_ColumnVarNameInTable="columnlast_name_of_the_author" msprop:Generator_UserColumnName="last name of the author" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="first_x0020_name_x0020_of_x0020_the_x0020_author" msprop:Generator_ColumnPropNameInRow="first_name_of_the_author" msprop:Generator_ColumnPropNameInTable="first_name_of_the_authorColumn" msprop:Generator_ColumnVarNameInTable="columnfirst_name_of_the_author" msprop:Generator_UserColumnName="first name of the author" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="patronymic_x0020_of_x0020_the_x0020_author" msprop:Generator_ColumnPropNameInRow="patronymic_of_the_author" msprop:Generator_ColumnPropNameInTable="patronymic_of_the_authorColumn" msprop:Generator_ColumnVarNameInTable="columnpatronymic_of_the_author" msprop:Generator_UserColumnName="patronymic of the author" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="genre" msprop:Generator_ColumnPropNameInRow="genre" msprop:Generator_ColumnPropNameInTable="genreColumn" msprop:Generator_ColumnVarNameInTable="columngenre" msprop:Generator_UserColumnName="genre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="type" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_UserColumnName="type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ticket_x0020_price" msprop:Generator_ColumnPropNameInRow="ticket_price" msprop:Generator_ColumnPropNameInTable="ticket_priceColumn" msprop:Generator_ColumnVarNameInTable="columnticket_price" msprop:Generator_UserColumnName="ticket price" type="xs:int" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnPropNameInTable="dateColumn" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_UserColumnName="date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="address_x0020_of_x0020_the_x0020_event" msprop:Generator_ColumnPropNameInRow="address_of_the_event" msprop:Generator_ColumnPropNameInTable="address_of_the_eventColumn" msprop:Generator_ColumnVarNameInTable="columnaddress_of_the_event" msprop:Generator_UserColumnName="address of the event" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="number_x0020_of_x0020_viewers" msprop:Generator_ColumnPropNameInRow="number_of_viewers" msprop:Generator_ColumnPropNameInTable="number_of_viewersColumn" msprop:Generator_ColumnVarNameInTable="columnnumber_of_viewers" msprop:Generator_UserColumnName="number of viewers" type="xs:int" minOccurs="0" />
+              <xs:element name="number_x0020_of_x0020_tickets_x0020_purchased" msprop:Generator_ColumnPropNameInRow="number_of_tickets_purchased" msprop:Generator_ColumnPropNameInTable="number_of_tickets_purchasedColumn" msprop:Generator_ColumnVarNameInTable="columnnumber_of_tickets_purchased" msprop:Generator_UserColumnName="number of tickets purchased" type="xs:int" minOccurs="0" />
+              <xs:element name="number_x0020_of_x0020_available_x0020_seats" msprop:Generator_ColumnPropNameInRow="number_of_available_seats" msprop:Generator_ColumnPropNameInTable="number_of_available_seatsColumn" msprop:Generator_ColumnVarNameInTable="columnnumber_of_available_seats" msprop:Generator_UserColumnName="number of available seats" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Role1" msprop:Generator_RowEvHandlerName="Role1RowChangeEventHandler" msprop:Generator_RowDeletedName="Role1RowDeleted" msprop:Generator_RowDeletingName="Role1RowDeleting" msprop:Generator_RowEvArgName="Role1RowChangeEvent" msprop:Generator_TablePropName="Role1" msprop:Generator_RowChangedName="Role1RowChanged" msprop:Generator_RowChangingName="Role1RowChanging" msprop:Generator_TableClassName="Role1DataTable" msprop:Generator_RowClassName="Role1Row" msprop:Generator_TableVarName="tableRole1" msprop:Generator_UserTableName="Role1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x2116__x0020_p_x002F_p_x0020_role" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="___p_p_role" msprop:Generator_ColumnPropNameInTable="___p_p_roleColumn" msprop:Generator_ColumnVarNameInTable="_column__p_p_role" msprop:Generator_UserColumnName="№ p/p role" type="xs:int" />
+              <xs:element name="title_x0020_role" msprop:Generator_ColumnPropNameInRow="title_role" msprop:Generator_ColumnPropNameInTable="title_roleColumn" msprop:Generator_ColumnVarNameInTable="columntitle_role" msprop:Generator_UserColumnName="title role" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="User" msprop:Generator_RowEvHandlerName="UserRowChangeEventHandler" msprop:Generator_RowDeletedName="UserRowDeleted" msprop:Generator_RowDeletingName="UserRowDeleting" msprop:Generator_RowEvArgName="UserRowChangeEvent" msprop:Generator_TablePropName="User" msprop:Generator_RowChangedName="UserRowChanged" msprop:Generator_RowChangingName="UserRowChanging" msprop:Generator_TableClassName="UserDataTable" msprop:Generator_RowClassName="UserRow" msprop:Generator_TableVarName="tableUser" msprop:Generator_UserTableName="User">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="_x005B__x2116__x0020_p_x002F_p_x005D__x0020_user" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="____p_p__user" msprop:Generator_ColumnPropNameInTable="____p_p__userColumn" msprop:Generator_ColumnVarNameInTable="_column___p_p__user" msprop:Generator_UserColumnName="[№ p/p] user" type="xs:int" />
+              <xs:element name="login" msprop:Generator_ColumnPropNameInRow="login" msprop:Generator_ColumnPropNameInTable="loginColumn" msprop:Generator_ColumnVarNameInTable="columnlogin" msprop:Generator_UserColumnName="login" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="password" msprop:Generator_ColumnPropNameInRow="password" msprop:Generator_ColumnPropNameInTable="passwordColumn" msprop:Generator_ColumnVarNameInTable="columnpassword" msprop:Generator_UserColumnName="password" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_x0020_role" msprop:Generator_ColumnPropNameInRow="ID_role" msprop:Generator_ColumnPropNameInTable="ID_roleColumn" msprop:Generator_ColumnVarNameInTable="columnID_role" msprop:Generator_UserColumnName="ID role" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Performanse" />
+      <xs:field xpath="mstns:_x2116__x0020_p_x002F_p" />
+    </xs:unique>
+    <xs:unique name="Role1_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Role1" />
+      <xs:field xpath="mstns:_x2116__x0020_p_x002F_p_x0020_role" />
+    </xs:unique>
+    <xs:unique name="User_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:User" />
+      <xs:field xpath="mstns:_x005B__x2116__x0020_p_x002F_p_x005D__x0020_user" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,140 @@
+﻿<Window x:Class="Specra.WindowFolder.ManagerFolder.AddPerformanseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Specra.WindowFolder.ManagerFolder"
+        mc:Ignorable="d"
+        Title="AddPerformanseWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,61">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="221"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="25"/>
+
+
+        </Grid.RowDefinitions>
+        <Image x:Name="LogoIm" Grid.Row="1"
+               Grid.Column="1" Grid.ColumnSpan="2" />
+        <Label 
+               Content="Редактирование пользователя" 
+               Grid.Column="3" Grid.Row="1"/>
+        <Label  
+               Content="title" Grid.Column="1" Grid.Row="3" Margin="0,0,22,0"/>
+        <TextBox x:Name="LoginTb" Grid.Row="3" Grid.Column="3"/>
+        <Label  
+               Content="last name of the stage director" Grid.Column="1" Grid.Row="5" Margin="0,0,22,0"/>
+        <Label Grid.Column="1" Content="fitst name of the stage director" HorizontalAlignment="Left" Grid.Row="7" VerticalAlignment="Center" Height="25" Width="181"/>
+        <Label Content="Label"/>
+        <Label Grid.Column="1" Content="patronymic of the stage director" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Center" Height="25" Width="181"/>
+        <Label Grid.Column="1" Content="last name of the production designer" HorizontalAlignment="Left" Grid.Row="11" VerticalAlignment="Center" Height="25" Width="206"/>
+        <Label Grid.Column="1" Content="first name of the production designer" HorizontalAlignment="Left" Grid.Row="13" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="patronymic of the production designer" HorizontalAlignment="Left" Grid.Row="15" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="last name of the stage manager" HorizontalAlignment="Left" Grid.Row="17" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="first name of the stage manager" HorizontalAlignment="Left" Grid.Row="19" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="patronymic of the stage manager" HorizontalAlignment="Left" Grid.Row="21" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="last name of the author" HorizontalAlignment="Left" Grid.Row="23" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="first name of the author" HorizontalAlignment="Left" Grid.Row="25" VerticalAlignment="Center"/>
+        <Label Content="patronymic of the author" HorizontalAlignment="Left" Margin="8,0,0,0" Grid.Row="27" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="1" Content="genre" HorizontalAlignment="Left" Grid.Row="29" VerticalAlignment="Center" Width="147" Margin="1,0,0,0"/>
+        <Label Grid.Column="1" Content="type" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="31" VerticalAlignment="Center" Width="40"/>
+        <Label Grid.Column="1" Content="ticket price" HorizontalAlignment="Left" Grid.Row="33" VerticalAlignment="Center" Width="178"/>
+        <Label Content="date" HorizontalAlignment="Left" Margin="8,0,0,0" Grid.Row="35" VerticalAlignment="Center" Grid.ColumnSpan="2" Width="43"/>
+        <Label Grid.Column="1" Content="address of the event" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="37" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="number of viewers" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="39" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="number of tickets purchased" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="41" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Content="number of available seats" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="43" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+        <TextBox x:Name="titleTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="fitstnameofthestagedirectorTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="patronymicofthestagedirectorTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+        <TextBox x:Name="lastnameofthestagedirectorTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="7" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="lastnameoftheproductiondesignerTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="9" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="firstnameoftheproductiondesignerTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="11" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="patronymicoftheproductiondesignerTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="13" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="lastnameofthestagemanagerTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="15" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="firstnameofthestagemanagerTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="17" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="patronymicofthestagemanagerTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="19" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="lastnameoftheauthorTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="21" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="firstnameoftheauthorTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="patronymicoftheauthorTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="25" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="genreTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="27" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="typeTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="29" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="ticketpriceTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="31" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="dateTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="33" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="addressoftheeventTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="35" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="numberofviewersTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="37" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="numberofticketspurchasedTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="39" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+        <TextBox x:Name="numberofavailableseatsTb" Grid.Column="2" HorizontalAlignment="Center" Grid.Row="41" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="559" Height="25"/>
+
+
+    </Grid>
+</Window>
